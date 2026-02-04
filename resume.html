@@ -1,87 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Ray</title>
+  <meta name="description" content="Resume and skills of Ray - Full Stack Developer">
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bg-deep': '#0a0a0f',
+            'bg-card': '#12121a',
+            'bg-elevated': '#1a1a2e',
+            'neon-cyan': '#00d4ff',
+            'neon-purple': '#a855f7',
+            'neon-pink': '#ec4899',
+            'text-primary': '#ffffff',
+            'text-secondary': '#94a3b8',
+            'text-muted': '#64748b',
+          }
+        }
+      }
+    }
+  </script>
 
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="header.js"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-	<div id="header"></div>
-	<div id="content">
-		<div class="w-50 m-auto mt-3">
-			<p class="fs-1 fw-bolder my-5 text-center">Resume</p>
-			<div class="border rounded p-2">
-				<div class="row border-bottom">
-					<div class="col-md-3 fw-bolder text-md-end fs-5">Skill</div>
-					<div class="col-md">
-						<p class="fw-bold mb-1">Console and GUI Application Developing/Script</p>
-						<p class="fs-5">
-							<span class="badge bg-secondary">C</span>
-							<span class="badge bg-secondary">C++</span>
-							<span class="badge bg-secondary">Java</span>
-							<span class="badge bg-secondary">Python</span>
-							<span class="badge bg-secondary">Rust</span>
-							<span class="badge bg-secondary">Dart</span>
-							<span class="badge bg-secondary">Bash</span>
-						</p>
-						<p class="fw-bold mb-1">Website Developing</p>
-						<p class="fs-5">
-							<span class="badge bg-secondary">HTML</span>
-							<span class="badge bg-secondary">CSS</span>
-							<span class="badge bg-secondary">Bootstrap</span>
-							<span class="badge bg-secondary">JavaScript</span>
-							<span class="badge bg-secondary">JQuery</span>
-							<span class="badge bg-secondary">Electron</span>
-							<span class="badge bg-secondary">React</span>
-							<span class="badge bg-secondary">Php</span>
-							<span class="badge bg-secondary">MySQL, SQLite</span>
-							<span class="badge bg-secondary">Firebase</span>
-							<span class="badge bg-secondary">Supabase</span>
-						</p>
-						<p class="fw-bold mb-1">Collaboration</p>
-						<p class="fs-5">
-							<span class="badge bg-secondary">Git</span>
-							<span class="badge bg-secondary">Github</span>
-							<span class="badge bg-secondary">Docker</span>
-						</p>
-						<p class="fw-bold mb-1">Other Tools</p>
-						<p class="fs-5">
-							<span class="badge bg-secondary">Jupyter Notebook</span>
-							<span class="badge bg-secondary">Linux Environment</span>
-							<span class="badge bg-secondary">Terminal(CMD) only operation</span>
-						</p>
-					</div>
-				</div>
-				<div class="row border-bottom">
-					<div class="col-md-3 fw-bolder text-md-end fs-5">Experience</div>
-					<div class="col-md">
-						<p class="">Yet to Have any before graduation, Check out my portfolio <a id="portfolio-btn" href="./portfolio.html">here</a></p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3 fw-bolder text-md-end fs-5">Education</div>
-					<div class="col-md">
-						<p><span class="fw-bold">Diploma of Information Technology, Multimedia University</span><br />2022 until Present</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<body class="bg-bg-deep text-text-primary min-h-screen">
+  <!-- Header -->
+  <div id="header"></div>
 
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-	<script>
-      $("#header").html(Header.html())
-      Header.setListener()
-	</script>
+  <!-- Main Content -->
+  <main class="pt-24 pb-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Page Title -->
+      <div data-aos="fade-up" class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          My <span class="gradient-text">Resume</span>
+        </h1>
+        <p class="text-text-secondary max-w-2xl mx-auto">
+          Skills, education, and experience that shape my journey as a developer
+        </p>
+      </div>
+
+      <!-- Skills Section -->
+      <section data-aos="fade-up" class="mb-16">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-10 h-10 rounded-lg bg-neon-cyan/10 flex items-center justify-center">
+            <i data-lucide="code-2" class="w-5 h-5 text-neon-cyan"></i>
+          </div>
+          <h2 class="text-2xl font-bold">Skills</h2>
+        </div>
+
+        <div class="grid gap-6">
+          <!-- Programming Languages -->
+          <div data-aos="fade-up" data-aos-delay="100" class="glass-card p-6">
+            <h3 class="text-lg font-semibold text-neon-cyan mb-4 flex items-center gap-2">
+              <i data-lucide="terminal" class="w-5 h-5"></i>
+              Programming Languages
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">C</span>
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Rust</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Bash</span>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div data-aos="fade-up" data-aos-delay="200" class="glass-card p-6">
+            <h3 class="text-lg font-semibold text-neon-purple mb-4 flex items-center gap-2">
+              <i data-lucide="globe" class="w-5 h-5"></i>
+              Web Development
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Electron</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Supabase</span>
+            </div>
+          </div>
+
+          <!-- Tools & Collaboration -->
+          <div data-aos="fade-up" data-aos-delay="300" class="glass-card p-6">
+            <h3 class="text-lg font-semibold text-neon-pink mb-4 flex items-center gap-2">
+              <i data-lucide="wrench" class="w-5 h-5"></i>
+              Tools & Collaboration
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">GitHub</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Jupyter Notebook</span>
+              <span class="tech-tag">Linux</span>
+              <span class="tech-tag">Terminal/CLI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section data-aos="fade-up" class="mb-16">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-10 h-10 rounded-lg bg-neon-purple/10 flex items-center justify-center">
+            <i data-lucide="graduation-cap" class="w-5 h-5 text-neon-purple"></i>
+          </div>
+          <h2 class="text-2xl font-bold">Education</h2>
+        </div>
+
+        <div class="timeline">
+          <div data-aos="fade-up" data-aos-delay="100" class="timeline-item">
+            <div class="glass-card p-6">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-3">
+                <h3 class="text-xl font-semibold">Diploma in Information Technology</h3>
+                <span class="text-neon-cyan font-mono text-sm">2022 - Present</span>
+              </div>
+              <p class="text-text-secondary mb-2">Multimedia University (MMU)</p>
+              <p class="text-text-muted text-sm">
+                Pursuing a comprehensive education in IT fundamentals, programming,
+                web development, and software engineering principles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section data-aos="fade-up">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-10 h-10 rounded-lg bg-neon-pink/10 flex items-center justify-center">
+            <i data-lucide="briefcase" class="w-5 h-5 text-neon-pink"></i>
+          </div>
+          <h2 class="text-2xl font-bold">Experience</h2>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100" class="glass-card p-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Building My Portfolio</h3>
+              <p class="text-text-secondary">
+                Currently focused on studies and building personal projects.
+                Check out my portfolio to see what I've been working on!
+              </p>
+            </div>
+            <a href="portfolio.html" class="btn-primary-gradient whitespace-nowrap">
+              <i data-lucide="folder-open" class="w-5 h-5"></i>
+              View Projects
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
 </body>
 </html>
